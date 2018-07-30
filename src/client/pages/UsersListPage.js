@@ -17,7 +17,7 @@ class UsersList extends React.Component {
 	render() {
 		return (
 			<div>
-				list
+				User List
 				<ul>{this.renderUsers()}</ul>
 			</div>
 		);
@@ -30,4 +30,11 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(mapStateToProps, { fetchUsers })(UsersList);
+function loadData(store) {
+	return store.dispatch(fetchUsers());
+}
+
+export default { 
+	loadData,
+	component: connect(mapStateToProps, { fetchUsers })(UsersList)
+};
