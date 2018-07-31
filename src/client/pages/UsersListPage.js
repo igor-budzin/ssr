@@ -1,8 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'
+import {Input} from 'antd';
 
 import { fetchUsers } from '../actions';
+
+import 'antd/lib/input/style/css';
 
 class UsersList extends React.Component {
 	componentDidMount() {
@@ -30,6 +33,7 @@ class UsersList extends React.Component {
 				{this.head()}
 				User List
 				<ul>{this.renderUsers()}</ul>
+				<Input size="large" />
 			</div>
 		);
 	}
