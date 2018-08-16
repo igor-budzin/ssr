@@ -1,0 +1,63 @@
+# ⚡ Universal JS, HMR and SSR ⚡
+
+🚧🚧🚧 attention: This project has been updated and upgraded for **React Router 4** and **Hot Module Reloading 3** **[over here](https://github.com/Alex-ray/v2-universal-js-hmr-ssr-react-redux)**
+
+Use this project if your still using React Router 3 or below.
+
+### 🗒 Note:
+
+This project is intended as an _example_ app for using Hot Module Reloading and Server Sider rendering with
+Express, React, Redux and React Router.
+
+> Video walkthrough here: https://www.dropbox.com/s/1vrlqqkridz2jew/zoom_0.mp4
+
+### Setup
+`npm install`
+
+For Development (HMR)
+
+`npm run dev`
+
+For Production (SSR)
+
+`npm run build && npm run prod`
+
+
+### What is it?
+
+*Universal JS: -*
+JavaScript that can run on both the server and client (or any other JS platform for that matter) !
+
+*Hot Module Reloading: -*
+Replaces modules that have been changed in real time while preserving the state.
+
+*Server Side Rendering: -*
+Renders Pages on the initial for fast page loads and search engine optimization
+
+### Why?
+
+Incredibly Productive
+
+Extremely Flexible
+
+Blazing Fast
+
+... And its just plain cool 😎
+
+### How?
+
+The Basic setup goes like this...
+
+An express server to handle requests, render the page and handle all our file requests.
+
+Webpack to bundle everything up listen for files changes and hot reload them to the client.
+
+We will be using React, Redux and React Router to match url requests, and render the state to html that we can then send back to the client.
+
+![hmr-ssr](https://cloud.githubusercontent.com/assets/2454928/18360529/39573fe2-75b3-11e6-8a06-75bc2664e98d.gif)
+
+#### Useful Links
+- [Ultimate Hot Reloading Example](https://github.com/glenjamin/ultimate-hot-reloading-example)
+- [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example)
+- [Ducks Modular Redux](https://github.com/erikras/ducks-modular-redux)
+- [Meatier](https://github.com/mattkrick/meatier)
